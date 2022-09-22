@@ -29,4 +29,16 @@ public class Tree {
     public TreeType getTreeType() {
         return this.treeType;
     }
+
+    public double getHeightFt() {
+        return this.heightFt;
+    }
+
+    public double getTrunkDiameterInches() {
+        return this.trunkDiameterInches;
+    }
+
+    public void setTrunkDiameterInches(double trunkDiameterInches) {
+        this.trunkDiameterInches = trunkDiameterInches;
+    }
 }
