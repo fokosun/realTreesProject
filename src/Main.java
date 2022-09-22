@@ -10,6 +10,8 @@ public class Main {
         oakTree.isTallTree();
         mapleTree.isTallTree();
 
+        System.out.println(mapleTree.getTreeType());
+
         System.out.println(Tree.TRUNK_COLOR.getAlpha());
     }
 }

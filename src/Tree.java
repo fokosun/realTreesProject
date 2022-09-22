@@ -1,28 +1,32 @@
 import java.awt.*;
 
 public class Tree {
-    double heightFt;
-    double trunkDiameterInches;
-    TreeType treeType;
+    private double heightFt;
+    private double trunkDiameterInches;
+    private final TreeType treeType;
     static Color TRUNK_COLOR = new Color(102,51,0);
 
-    Tree(double heightFt, double trunkDiameterInches,
+    public Tree(double heightFt, double trunkDiameterInches,
          TreeType treeType) {
         this.heightFt = heightFt;
         this.trunkDiameterInches = trunkDiameterInches;
         this.treeType = treeType;
     }
 
-    void grow() {
+    public void grow() {
         this.heightFt = this.heightFt + 10;
         this.trunkDiameterInches = this.trunkDiameterInches + 1;
     }
 
-    void isTallTree() {
+    public void isTallTree() {
         if (this.heightFt > 100) {
             System.out.println(this.treeType + " is a tall tree!");
         } else {
             System.out.println(this.treeType + " is not a tall tree.");
         }
+    }
+
+    public TreeType getTreeType() {
+        return this.treeType;
     }
 }
